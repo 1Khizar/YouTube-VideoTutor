@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VideoTutor - Your AI Video Learning Companion</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="stars"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="brand">
+          <div class="logo-icon">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none">
+              <defs>
+                <linearGradient
+                  id="logoGrad"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: #ff6b6b; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #4ecdc4; stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <circle
+                cx="22.5"
+                cy="22.5"
+                r="20"
+                fill="url(#logoGrad)"
+                opacity="0.2"
+              />
+              <path d="M17 14L30 22.5L17 31V14Z" fill="url(#logoGrad)" />
+            </svg>
+          </div>
+          <div class="brand-text">
+            <h1 class="brand-name">VideoTutor</h1>
+            <p class="brand-tagline">AI-Powered Learning</p>
+          </div>
+        </div>
+        <div class="nav-stats">
+          <div class="stat-item">
+            <span class="stat-icon">🎓</span>
+            <span class="stat-text">Smart Learning</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-icon">⚡</span>
+            <span class="stat-text">Instant Answers</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-wrapper">
+      <div class="container">
+        <!-- Welcome Dashboard -->
+        <div id="welcome-dashboard" class="dashboard">
+          <!-- Hero Section -->
+          <div class="hero-section">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <span class="badge-icon">✨</span>
+                <span>Transform Videos into Knowledge</span>
+              </div>
+              <h1 class="hero-title">
+                Learn From Any
+                <span class="gradient-text">YouTube Video</span>
+              </h1>
+              <p class="hero-description">
+                Paste a video link, ask questions and get instant AI-powered
+                answers. Your personal tutor for any educational content.
+              </p>
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="feature-grid">
+              <div class="feature-card card-glow">
+                <div class="feature-icon icon-pink">
+                  <svg
+                    width="28"
+                    height="28"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                    />
+                  </svg>
+                </div>
+                <h3>Instant Insights</h3>
+                <p>
+                  Get immediate explanations of complex topics from any video
+                </p>
+              </div>
+
+              <div class="feature-card card-glow">
+                <div class="feature-icon icon-cyan">
+                  <svg
+                    width="28"
+                    height="28"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+                    />
+                  </svg>
+                </div>
+                <h3>Smart Q&A</h3>
+                <p>Ask unlimited questions and receive context-aware answers</p>
+              </div>
+
+              <div class="feature-card card-glow">
+                <div class="feature-icon icon-purple">
+                  <svg
+                    width="28"
+                    height="28"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                </div>
+                <h3>Focused Learning</h3>
+                <p>
+                  Only video content - no distractions or off-topic responses
+                </p>
+              </div>
+
+              <div class="feature-card card-glow">
+                <div class="feature-icon icon-orange">
+                  <svg
+                    width="28"
+                    height="28"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3>Lightning Fast</h3>
+                <p>Powered by advanced AI for quick, accurate responses</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Input Section -->
+          <div class="input-section">
+            <div class="input-card floating">
+              <div class="input-header">
+                <span class="input-icon">🎬</span>
+                <h2>Start Your Learning Journey</h2>
+              </div>
+              <div class="input-wrapper">
+                <div class="input-group-modern">
+                  <div class="input-icon-left">
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    type="text"
+                    id="video-url"
+                    placeholder="Paste YouTube video URL here..."
+                    class="modern-input"
+                    autocomplete="off"
+                  />
+                  <button id="process-btn" class="modern-btn">
+                    <span class="btn-content">
+                      <span class="btn-text">Process Video</span>
+                      <svg
+                        class="btn-arrow"
+                        width="20"
+                        height="20"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <p class="input-helper">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Works with any YouTube video that has captions enabled
+                </p>
+              </div>
+            </div>
+
+            <!-- Quick Start Examples -->
+            <div class="examples-section">
+              <p class="examples-title">Try these educational videos:</p>
+              <div class="example-pills">
+                <button
+                  class="example-pill"
+                  data-url="https://www.youtube.com/watch?v=example1"
+                >
+                  📚 Machine Learning Tutorial
+                </button>
+                <button
+                  class="example-pill"
+                  data-url="https://www.youtube.com/watch?v=example2"
+                >
+                  🧪 Physics Explained
+                </button>
+                <button
+                  class="example-pill"
+                  data-url="https://www.youtube.com/watch?v=example3"
+                >
+                  💻 Coding Fundamentals
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Dashboard (Hidden initially) -->
+        <div id="chat-dashboard" class="chat-dashboard" style="display: none">
+          <div class="dashboard-layout">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+              <div class="video-card-sidebar">
+                <div class="video-thumbnail-wrapper">
+                  <img
+                    id="video-thumbnail"
+                    src=""
+                    alt="Video"
+                    class="sidebar-thumbnail"
+                  />
+                  <div class="play-overlay">
+                    <svg
+                      width="40"
+                      height="40"
+                      fill="white"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="video-info-sidebar">
+                  <h3 id="video-title" class="sidebar-video-title"></h3>
+                  <p id="video-author" class="sidebar-video-author"></p>
+                  <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span>Ready to Learn</span>
+                  </div>
+                </div>
+              </div>
+
+              <button id="change-video-btn" class="sidebar-btn">
+                <svg
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                  />
+                </svg>
+                Load New Video
+              </button>
+
+              <div class="sidebar-stats">
+                <div class="stat-box">
+                  <span class="stat-number">∞</span>
+                  <span class="stat-label">Questions</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">⚡</span>
+                  <span class="stat-label">Instant</span>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Main Chat Area -->
+            <div class="chat-main">
+              <div class="chat-header">
+                <div class="chat-header-content">
+                  <h2>Ask Anything About This Video</h2>
+                  <p>
+                    I'll provide accurate answers based on the video content
+                  </p>
+                </div>
+              </div>
+
+              <div class="chat-container-modern">
+                <div id="chat-messages" class="chat-messages-modern">
+                  <!-- Messages will appear here -->
+                </div>
+
+                <!-- Suggested Questions -->
+                <div id="suggested-questions" class="suggestions-modern">
+                  <p class="suggestions-header">💡 Suggested Questions</p>
+                  <div class="suggestions-list">
+                    <button class="suggestion-chip">Summarize the video</button>
+                    <button class="suggestion-chip">
+                      What are the main topics?
+                    </button>
+                    <button class="suggestion-chip">
+                      Explain key concepts
+                    </button>
+                    <button class="suggestion-chip">
+                      What examples are given?
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chat Input -->
+              <div class="chat-input-modern">
+                <div class="input-container-chat">
+                  <textarea
+                    id="chat-input"
+                    placeholder="Type your question here..."
+                    rows="1"
+                    class="chat-textarea"
+                  ></textarea>
+                  <button id="send-btn" class="send-btn-modern" disabled>
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div id="loading-overlay" class="loading-modern" style="display: none">
+          <div class="loading-content">
+            <div class="loading-spinner-modern">
+              <div class="spinner-ring"></div>
+              <div class="spinner-ring"></div>
+              <div class="spinner-ring"></div>
+            </div>
+            <h3 id="loading-text" class="loading-title">
+              Processing Your Video...
+            </h3>
+            <p class="loading-subtitle">
+              Analyzing transcript and preparing AI assistant
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+      <div class="container">
+        <p class="footer-text">
+          <span class="footer-brand">VidMind</span> - Empowering learners with
+          AI-driven insights
+        </p>
+      </div>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>
