@@ -1,5 +1,3 @@
-# Documentation
-
 ## 🎓 VideoTutor - Interactive Video Learning Assistant
 
 A powerful, production ready web application that transforms YouTube videos into interactive learning experiences. Students can ask questions about video content and get instant, accurate answers powered by AI.
@@ -100,9 +98,9 @@ For issues, questions, or suggestions, please open an issue on GitHub.
 **Khizar Ishtiaq**  
 AI Engineer
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/khizar-ishtiaq)
-- 🐱 [GitHub](https://github.com/khizar-ishtiaq)
-- 📧 Email: <khizar.ishtiaq@example.com>
+- 💼 [LinkedIn](https://www.linkedin.com/in/khizar-ishtiaq-)
+- 🐱 [GitHub](https://https://github.com/1Khizar)
+- 📧 Email: <khizarishtiaq59@example.com>
 
 - Built with ❤️ for students who want to learn smarter, not harder.
 
